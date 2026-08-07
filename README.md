@@ -31,6 +31,7 @@ PDF Upload
 - Sentence Transformers
 - ChromaDB
 - Google Gemini API
+- LangSmith
 - React
 - HTML/CSS
 
@@ -43,6 +44,20 @@ PDF Upload
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Create a `.env` file from `.env.example` and set your keys:
+
+```bash
+GEMINI_API_KEY=your-gemini-api-key
+LANGSMITH_TRACING=true
+LANGSMITH_API_KEY=your-langsmith-api-key
+LANGSMITH_PROJECT=rag-pdf-app
+```
+
+LangSmith tracing is optional. When enabled, each chat request records the
+question, retrieved ChromaDB chunks, source metadata, final prompt, and Gemini
+answer. Upload ingestion is also traced so you can check whether a PDF was
+extracted, chunked, embedded, and indexed successfully.
 
 ## API Endpoints
 

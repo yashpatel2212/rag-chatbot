@@ -4,9 +4,16 @@ from chunking import chunk_text
 from config import PDF_DIR
 from embeddings import EmbeddingService
 from ingest import extract_pages
+from tracing import summarize_ingestion_inputs, summarize_ingestion_output, traceable
 from vectordb import VectorDB
 
 
+@traceable(
+    name="Ingest PDF",
+    run_type="chain",
+    process_inputs=summarize_ingestion_inputs,
+    process_outputs=summarize_ingestion_output,
+)
 def ingest_pdf(
     pdf_path: Path,
     db: VectorDB,

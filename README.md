@@ -58,13 +58,13 @@ pip install -r requirements.txt
 
 ### Home Page
 
-![Home](screenshots/home.jpeg)
+![Home](app/docs/screenshots/home.jpeg)
 
 ### Chat Interface
 
-![Chat](screenshots/answer.jpeg)
-![Chat](screenshots/answer(2).jpeg)
+![Chat](app/docs/screenshots/answer.jpeg)
+![Chat](app/docs/screenshots/answer(2).jpeg)
 
 ### Retrieved Context
 
-![search](screenshots/searching.jpeg)
+![search](app/docs/screenshots/searching.jpeg)

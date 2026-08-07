@@ -4,8 +4,6 @@ A full-stack Retrieval-Augmented Generation (RAG) application that lets users
 upload PDFs, ask questions about them, and receive grounded answers with
 document and page-level citations.
 
-![Dashboard](docs/screenshots/dashboard.png)
-
 ## Features
 
 - Upload and index multiple PDFs
@@ -44,8 +42,9 @@ PDF Upload
 
 ```bash
 pip install -r requirements.txt
+```
 
-API Endpoints
+## API Endpoints
 
 | Method | Endpoint           | Purpose                           |
 |--------|--------------------|-----------------------------------|

@@ -1,0 +1,14 @@
+#Virtual Enviornment
+.venv/
+
+.env
+
+__pycache__/
+*.pyc
+
+chromaDB/
+
+.vscode/
+
+
+data/

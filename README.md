@@ -53,3 +53,19 @@ API Endpoints
 | POST   | `/upload`          | Upload and index a PDF            |
 | GET    | `/documents`       | List indexed documents            |
 | DELETE | `/delete/{pdf_id}` | Delete a document and its vectors |
+
+
+## Screenshots
+
+### Home Page
+
+![Home](screenshots/home.jpeg)
+
+### Chat Interface
+
+![Chat](screenshots/answer.jpeg)
+![Chat](screenshots/answer(2).jpeg)
+
+### Retrieved Context
+
+![search](screenshots/searching.jpeg)

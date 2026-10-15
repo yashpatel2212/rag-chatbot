@@ -28,7 +28,16 @@ CHUNK_OVERLAP = 100
 # Retrieval
 # ==========================
 
-TOP_K = 3
+# Retrieve a wider pool, then let the evaluator select the few chunks that are
+# actually relevant. This is deliberately separate from ANSWER_CONTEXT_K.
+TOP_K = 8
+ANSWER_CONTEXT_K = 4
+MAX_REPAIR_ATTEMPTS = 1
+
+# A response must meet all of these evaluator scores to be shown as verified.
+MIN_GROUNDEDNESS_SCORE = 0.85
+MIN_ANSWER_RELEVANCE_SCORE = 0.75
+MIN_COMPLETENESS_SCORE = 0.70
 
 # ==========================
 # Gemini

@@ -53,6 +53,9 @@ h2 { font-size: 1.25rem; margin: 0; }
 .message.assistant { background: #ffffff; border: 1px solid #dce7e1; }
 .message-label { font-weight: 750; font-size: 0.75rem; margin-bottom: 7px; opacity: 0.8; }
 .message p { white-space: pre-wrap; line-height: 1.55; margin-bottom: 0; }
+.answer-evaluation { display: inline-block; margin-top: 12px; padding: 4px 8px; border-radius: 5px; font-size: 0.76rem; font-weight: 700; }
+.answer-evaluation.verified { color: #17604e; background: #e7f4ed; border: 1px solid #cee4d8; }
+.answer-evaluation.unverified { color: #8a4d12; background: #fff5df; border: 1px solid #f0d49d; }
 .citations { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
 .citations span { color: #17604e; background: #e7f4ed; border: 1px solid #cee4d8; padding: 4px 7px; border-radius: 5px; font-size: 0.76rem; font-weight: 650; }
 .thinking { display: flex; align-items: center; gap: 9px; color: #5e7770; font-size: 0.9rem; }

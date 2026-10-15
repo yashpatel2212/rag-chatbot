@@ -19,16 +19,18 @@ def build_prompt(results: list[dict], question: str) -> str:
         )
 
     prompt = f"""
-You are an AI assistant that answers questions ONLY using the provided context.
+You are a document question-answering assistant. Answer ONLY using the provided context.
 
 Rules:
 1. Answer ONLY from the provided context.
 2. Do NOT make up information.
-3. If the answer is not present in the context, reply:
-   "I couldn't find that information in the provided handbook."
-4. Cite every factual answer using this format:
+3. Do not use outside knowledge, assumptions, or general advice. Do not infer a
+   fact that is not explicitly supported by the context.
+4. If the answer is absent or incomplete, reply exactly:
+   "I couldn't verify an answer from the uploaded documents."
+5. Cite every factual answer using this format:
    [Source: filename, page: number]
-5. Be concise but complete.
+6. Be concise but complete.
 
 ==================== CONTEXT ====================
 

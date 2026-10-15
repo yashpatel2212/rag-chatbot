@@ -10,6 +10,8 @@ document and page-level citations.
 - Page-aware text extraction with PyMuPDF
 - Semantic search using Sentence Transformers and ChromaDB
 - Gemini-generated answers grounded in retrieved document context
+- Fail-closed verification: unsupported answers are not shown
+- Retrieval grading, one query-rewrite repair, and answer confidence in the UI
 - Source, page, and chunk-level metadata
 - Document listing and deletion through FastAPI
 - React web interface for upload, chat, and document management
@@ -23,6 +25,8 @@ PDF Upload
 -> ChromaDB vector storage
 -> Similarity search
 -> Gemini response with citations
+-> Retrieval and answer verification
+-> One bounded repair retry, or a safe abstention
 
 ## Tech Stack
 

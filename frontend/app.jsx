@@ -172,6 +172,13 @@ function App() {
             <article className=${`message ${message.role}`} key=${index}>
               <div className="message-label">${message.role === "user" ? "You" : "Document Desk"}</div>
               <p>${message.content || message.answer}</p>
+              ${message.evaluation && html`
+                <div className=${`answer-evaluation ${message.evaluation.verified ? "verified" : "unverified"}`}>
+                  ${message.evaluation.verified
+                    ? `Verified against the documents · ${Math.round(message.evaluation.confidence * 100)}% confidence`
+                    : "Not verified from the uploaded documents"}
+                </div>
+              `}
               ${message.sources?.length > 0 && html`
                 <div className="citations">
                   ${message.sources.map((source, sourceIndex) => html`
